@@ -1,0 +1,249 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-wrapper {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d9d9d9;
+    gap: 800px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.name > h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #305653;
+}
+
+
+.icon{
+    width: 60px;
+    height: 40px;
+    background-color: maroon;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    font-size: 20px;
+    color: #305653;
+}
+.navigation > span {
+    height:20px;
+    width:2px;
+    background-color: whitesmoke;
+}
+
+.github img {
+    width:50px;
+    height: 50px;
+}
+/**************************************************/
+
+/**************************************************/
+body{
+    background-color: #212529;
+}
+
+
+.body-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.intro{
+    margin: 0 5%;
+    height: 500px;
+}
+
+.intro-line {
+    height: 200px;
+    width: 1px;
+    background-color: whitesmoke;
+    color: white;
+    display: inline-block;
+    z-index: 5;
+    position: absolute;
+    left: 1.5%;
+    top: 10%;
+}
+.intro-text-flex{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.intro-text-flex h1{
+    color: #aaa9a9;
+}
+.intro-text-flex h3{
+    color: #aaa;
+    top: 10px;
+    position: relative;
+}
+
+.link-flex{
+    display: flex;
+    width:100%;
+    position: relative;
+    top: 60px;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+    flex-wrap: wrap;
+    
+    
+}
+
+.link-flex a {
+    text-decoration: none;
+    width: 145px;
+    height:45px;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 10px;
+    position: relative;
+    left: -10%;
+    bottom: 5%;
+    gap:10px
+    
+}
+.contact-link {
+    position: relative;
+    right:50%;
+    top:60px;
+
+
+    
+    
+}
+.contact-link a {
+    width: 230px;
+}
+
+.link-flex a:hover{
+    background-color: #333;
+}
+
+/************************************************/
+
+/************************************************/
+
+.intro-end{
+    position: relative;
+    top: 150px;
+    width:110%;
+    right: 5%;
+}
+.intro-end h1{
+    position: relative;
+    right: 1%;
+    color: #808080;
+}
+
+
+
+.wrapper{
+    height: 500px;
+    width: 400px;
+}
+
+
+.page{
+    position: relative;
+    top :5%;
+    background-color: #112b3cad;
+    border: 2px solid whitesmoke;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+    perspective-origin: 50%;
+}
+.image-cube{
+    height: 300px;
+    width: 400px;
+    transform-style: preserve-3d;
+    position: relative;
+    top:50px;
+    transition: transform 1s ease;
+    animation-fill-mode: forwards;
+    
+}
+.movefwd{
+    z-index: 5;
+    width: 30px;
+    margin: 0;
+    height: 30px;
+    position: absolute;
+    top:50%;
+    left:5px;
+    transform: translateY(-50%);
+
+}
+.movebck{
+    z-index: 5;
+    width: 30px;
+    margin: 0;
+    height: 30px;
+    position: absolute;
+    top:50%;
+    right: 5px;
+    transform: translateY(-50%);
+
+}
+
+.button{
+    border-radius: 1rem;
+    background-color: silver;
+
+}
+.image-cube div{
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    animation-fill-mode: forwards;
+    transition: transform 1s ease;
+}
+
+.front{
+    transform: translateZ(200px);
+}
+.right{
+    transform: rotateY(-270deg) translateX(200px);
+    transform-origin: 100% 0;
+}
+.back{
+    transform: translateZ(-200px) rotateY(180deg);
+}
+.left{
+    transform: rotateY(270deg) translateX(-200px);
+    transform-origin: 0 50%;
+}
+/************************************************/
+
+/************************************************/
