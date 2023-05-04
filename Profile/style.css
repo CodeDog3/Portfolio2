@@ -127,20 +127,22 @@ body{
     gap:10px
     
 }
+.contact-link {
+    position: relative;
+    top:60px;
+    right:50%;
+}
+.contact-link a {
+    width: 230px;
+}
 
 .link-flex a:hover{
     background-color: #333;
 }
 
+/************************************************/
 
-/* 
-.wrapper{
-    width:350px;
-    height:220px;
-    background-color: whitesmoke;
-    position: relative;
-    top: 20px;
-} */
+/************************************************/
 
 .intro-end{
     position: relative;
@@ -238,3 +240,6 @@ body{
     transform: rotateY(270deg) translateX(-200px);
     transform-origin: 0 50%;
 }
+/************************************************/
+
+/************************************************/

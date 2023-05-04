@@ -15,10 +15,6 @@ const rb = () =>{
 }
 
 forward.forEach((button) => {
-  button.addEventListener('click', rb);
-});
-
-forward.forEach((button) => {
   button.addEventListener('click', () => {
     rotatedeg += 90;
     spinner.style.transform = `rotateY(${rotatedeg}deg)`;
