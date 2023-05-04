@@ -78,7 +78,6 @@ body{
     z-index: 5;
     position: absolute;
     left: 1.5%;
-    top: 10%;
 }
 .intro-text-flex{
     display: flex;
@@ -247,3 +246,113 @@ body{
 /************************************************/
 
 /************************************************/
+
+.about{
+    height:700px;
+    
+}
+
+.about-wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(30,1fr);
+    gap:5px;
+
+}
+
+.box1{
+    background-color: whitesmoke;
+    grid-row: 1/16;
+    grid-column: 1/25
+
+}
+
+.box2{
+    background-color: whitesmoke;
+    grid-row: 1/31;
+    grid-column: 25/31;
+}
+
+.box3{
+    background-color: whitesmoke;
+    grid-row: 16/31;
+    grid-column: 12/25;
+}
+
+.box4{
+    background-color: whitesmoke;
+    grid-row: 16/24;
+    grid-column: 1/12;
+}
+.box5{
+    background-color: whitesmoke;
+    grid-row: 24/31;
+    grid-column: 1/12;
+}
+
+.about-end {
+    position: relative;
+    top: 70px;
+}
+
+.about-end > h1{
+    color: gray;
+    position: relative;
+    right:1%;
+}
+
+
+
+
+
+/**********************************************/
+
+.project {
+    margin-top: 150px;
+    height: 2000px;
+
+}
+
+.project-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:100%;
+    height: 100%;
+    gap:80px;
+}
+
+.proj1, .proj2, .proj3, .proj4 {
+    background-color: white;
+    height: 400px;
+    width:50%;
+    position: relative;
+    border-radius: 5px;;
+}
+
+.proj2, .proj4{
+ align-self: flex-end;
+}
+
+.slider-right{
+    background-color: #333333;
+    height: 75%;
+    width: 95%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:90%;
+    border-radius: 5px;;
+}
+
+.slider-left{
+    background-color: #333333;
+    height: 75%;
+    width: 95%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:90%;
+    border-radius: 5px;;
+}
