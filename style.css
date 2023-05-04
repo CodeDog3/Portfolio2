@@ -201,6 +201,7 @@ body{
     top:50%;
     left:5px;
     transform: translateY(-50%);
+    cursor: pointer;
 
 }
 .movebck{
@@ -212,7 +213,7 @@ body{
     top:50%;
     right: 5px;
     transform: translateY(-50%);
-
+    cursor: pointer;
 }
 
 .button{
@@ -355,4 +356,38 @@ body{
     transform: translateY(-50%);
     right:90%;
     border-radius: 5px;;
+}
+
+.slider-line-big{
+    height: 96%;
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top:2%;
+}
+.slider-line-small{
+    height: 50%;
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    left: 23%;
+    top:25%;
+}
+
+.slider-line-big-right{
+    height: 96%;
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    right: 30%;
+    top:2%;
+}
+.slider-line-small-right{
+    height: 50%;
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    right: 23%;
+    top:25%;
 }
