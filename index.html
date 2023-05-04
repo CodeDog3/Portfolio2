@@ -16,11 +16,10 @@
         </div>
 
         <div class="navigation">
-            <a href="#intro" class = "home-btn">Home</a>
-            <a href="#about" class = "about-btn">About</a>
-            <!-- <div class="about-btn">About</div> -->
-            <div class="projects-btn">Projects</div>
-            <div class="contact-btn">Contact</div>
+            <a href="#intro" class = "home-btn link">Home</a>
+            <a href="#about" class = "about-btn link">About</a>
+            <a href="#projects" class = "projects-btn link">Projects</a>      
+            <a href="#contact" class = "contact-btn link">Contact</a>
             <span></span>
             <div class="github"><a href="https://github.com/CodeDog3"><img src="images/github.webp" alt="github"></a></div>
         </div>
@@ -28,7 +27,9 @@
 </nav>
 
 <body>
-    <div class="body-wrapper">
+    <div class="body-wrapper-wrapper">
+    <div class="body-wrapper" id= "intro">
+
         
         <div class="intro">
 
@@ -73,14 +74,14 @@
                 </div>
             </div>
 
-            <div class="intro-end">
+            <div class="intro-end" id = "about">
                 <h1>About Me</h1>
                 <hr>
             </div>
 
         </div>
 
-        <div class="about" id="about">
+        <div class="about" >
             <div class="about-wrapper">
 
                 <div class="box1"></div>
@@ -93,7 +94,7 @@
 
 
 
-            <div class="about-end">
+            <div class="about-end" id = "projects">
                 <h1>Projects</h1>
                 <hr>
             </div>
@@ -135,7 +136,7 @@
         </div>
 
 
-        <div class="contact">
+        <div class="contact" id = "contact">
             <div class="contact-flex">
 
                     <form action="https://formsubmit.co/jonbrennan800@gmail.com" method = "post">
@@ -173,6 +174,7 @@
 
 
     </div>
+</div>
 
 </body>
 <script src="index.js"></script>
