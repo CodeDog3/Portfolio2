@@ -129,8 +129,11 @@ body{
 }
 .contact-link {
     position: relative;
-    right:50%;
     top:60px;
+    right:50%;
+
+
+    
     
 }
 .contact-link a {
