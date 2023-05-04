@@ -11,13 +11,14 @@
 <nav>
     <div class="profile-wrapper">
         <div class="name">
-            <div class="icon"></div>
+            <img class = "icon" src="images/JB3.webp" alt="">
             <h3>Jon Brennan</h3>
         </div>
 
         <div class="navigation">
-            <div class="home-btn">Home</div>
-            <div class="about-btn">About</div>
+            <a href="#intro" class = "home-btn">Home</a>
+            <a href="#about" class = "about-btn">About</a>
+            <!-- <div class="about-btn">About</div> -->
             <div class="projects-btn">Projects</div>
             <div class="contact-btn">Contact</div>
             <span></span>
@@ -79,7 +80,7 @@
 
         </div>
 
-        <div class="about">
+        <div class="about" id="about">
             <div class="about-wrapper">
 
                 <div class="box1"></div>
@@ -126,8 +127,37 @@
 
                     
             </div>
+            <div class="project-end">
+                <h1>Contact Me</h1>
+                <hr>
+            </div>
 
         </div>
+
+
+        <div class="contact">
+            <div class="contact-flex">
+
+                    <form action="https://formsubmit.co/jonbrennan800@gmail.com" method = "post">
+                            <p>Name:</p> <input id="name" type="input" name = "name" placeholder="Enter your Name" required>
+                            <p>Email:</p> <input id = "email" type="email" name = "email" placeholder="Enter your Email" required>
+                            <div class="submission">
+                                <p>Message:</p> <textarea id = "message" name = "message" placeholder="Type your message" class="message" required></textarea>
+                                <button id = "submit" type = "submit">Submit</button>
+                            </div>
+                    </form>
+
+
+                <div class="contact-picture">
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
 
 
 
