@@ -1,7 +1,14 @@
+:root{
+    --primary: #011111;
+    --secondary: #3f8f8a;
+}
+
+
 *, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .profile-wrapper {
@@ -11,7 +18,7 @@
     justify-content: space-around;
     align-items: center;
     /* background-color: #d9d9d9; */
-    background-color: #b8b8b8;
+    background-color: var(--primary);
     gap: 800px;
 }
 
@@ -24,14 +31,14 @@
 .name > h3{
     font-size: 25px;
     font-weight: bold;
-    color: #305653;
+    color: #3f8f8a;
 }
 
 
 .icon{
     width: 60px;
     height: 40px;
-    background-color: maroon;
+    /* background-color: maroon; */
 }
 
 .navigation{
@@ -40,7 +47,7 @@
     align-items: center;
     gap:20px;
     font-size: 20px;
-    color: #305653;
+    color: #3f8f8a;
 }
 .navigation > span {
     height:20px;
@@ -63,7 +70,7 @@ nav{
 }
 .link{
     text-decoration: none;
-    color: #305653;
+    color: #3f8f8a;
 
 }
 /**************************************************/
@@ -71,10 +78,12 @@ nav{
 /**************************************************/
 body{
     background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+
     
 }
 .body-wrapper-wrapper{
-    background-color: #212529cb;
+    background-color: #0c0d0ee1;
+    height: 3300px;
 }
 
 
@@ -109,10 +118,10 @@ body{
 }
 
 .intro-text-flex h1{
-    color: #aaa9a9;
+    color: #3f8f8a
 }
 .intro-text-flex h3{
-    color: #aaa;
+    color: #3f8f8a;
     top: 10px;
     position: relative;
 }
@@ -122,7 +131,6 @@ body{
     width:100%;
     position: relative;
     top: 60px;
-    /* justify-content: space-evenly; */
     gap: 20px;
     flex-wrap: wrap;
     
@@ -130,12 +138,13 @@ body{
 }
 
 .link-flex a {
+    font-weight:bolder;
     text-decoration: none;
     width: 145px;
     height:45px;
     border: 2px solid #808080;
     border-radius: 5px;
-    color: white;
+    color: #3f8f8a;
     display: inline-block;
     text-align: center;
     vertical-align: center;
@@ -191,7 +200,8 @@ body{
     position: relative;
     top :5%;
     background-color: #112b3cad;
-    border: 2px solid whitesmoke;
+    /* border: 2px solid whitesmoke; */
+    border-radius: 1rem;
 }
 .container{
     height: 100%;
@@ -264,6 +274,29 @@ body{
     transform: rotateY(270deg) translateX(-200px);
     transform-origin: 0 50%;
 }
+
+
+.front {
+    background-image: url(images/gif2.gif);
+    background-size: cover;
+
+}
+
+.right{
+    background-image: url(images/gif1.gif);
+    background-size: cover;
+}
+
+.back{
+    background-image: url(images/gif3.gif);
+    background-size: cover;
+}
+
+.left{
+    background-image: url(images/gif4.gif);
+    background-size: cover;
+}
+
 /************************************************/
 
 /************************************************/
@@ -429,7 +462,7 @@ body{
 
 
 .contact{
-    height: 400px;
+    height: 300px;
     margin-top: 100px;
 }
 
