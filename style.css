@@ -78,6 +78,7 @@ nav{
 /**************************************************/
 body{
     background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    
 
     
 }
@@ -311,38 +312,137 @@ body{
     display: grid;
     grid-template-columns: repeat(30,1fr);
     grid-template-rows: repeat(30,1fr);
+    color: gray;
+    
+    
+    margin: auto;
     gap:5px;
 
 }
 
 .box1{
-    background-color: whitesmoke;
+    background-color: var(--primary);
     grid-row: 1/16;
-    grid-column: 1/25
+    grid-column: 1/25;
+    overflow:hidden;
+    position: relative;
+
+}
+.box1 > h3 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.box1-wrapper{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    transform: translateY(-10%);
+
+}
+.box1-wrapper img {
+    width: 150px;
+    height: 150px;
+}
+
+.box2-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
 
 }
 
 .box2{
-    background-color: whitesmoke;
+    background-color: var(--primary);
     grid-row: 1/31;
     grid-column: 25/31;
+    overflow:hidden;
+    position: relative;
+}
+.box2 h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.box2 ul{
+    position: relative;
+    left: 10%;
+}
+.box2 hr {
+    margin: 5px 0;
+}
+
+.about-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box2  img {
+
+    width: 100px;
+    height: 100px;
 }
 
 .box3{
-    background-color: whitesmoke;
+    background-color: var(--primary);
     grid-row: 16/31;
     grid-column: 12/25;
+    position: relative;
+}
+.box3 > p {
+    top: 50%;
+    font-size: 30px;
+    transform: translateY(-50%);
+    position: relative;
+    text-align: center;
+    overflow:hidden;
+}
+.box3 > h3 {
+    text-align: center;
+    font-size: 35px;
 }
 
 .box4{
-    background-color: whitesmoke;
+    background-color: var(--primary);
     grid-row: 16/24;
     grid-column: 1/12;
+    position: relative;
+    overflow:hidden;
+
+}
+.box4 > ul{
+ list-style-position: inside;
+ position: absolute;
+ bottom: 0;
+ font-size: 20px;
+ left:5%;
+}
+.box4 > h3{
+    font-size: 30px;
+    text-align: center;
 }
 .box5{
-    background-color: whitesmoke;
+    background-color: var(--primary);
     grid-row: 24/31;
     grid-column: 1/12;
+    list-style-position: inside;
+    position: relative;
+}
+.box5 h3{
+    text-align: center;
+    font-size: 30px;
+}
+.box5 ul{
+    left: 5%;
+    position: absolute;
+}
+.box5 li {
+    margin-top: 5px;
 }
 
 .about-end {
