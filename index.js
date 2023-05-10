@@ -1,9 +1,16 @@
 const backward = document.querySelectorAll('.movebck');
 const forward = document.querySelectorAll('.movefwd');
 const spinner = document.querySelector('.image-cube');
+const nullext = document.querySelector('.null-ext');
 
 let clicked = false;
 let rotatedeg = 0;
+
+
+
+nullext.addEventListener('click', ()=>{
+  alert("This project does not have a live site");
+})
 
 
 const rb = () =>{
@@ -31,3 +38,5 @@ backward.forEach((button) => {
   });
 
   setInterval(rb,5000);
+
+

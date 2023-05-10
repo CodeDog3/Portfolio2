@@ -484,7 +484,11 @@ body{
     height: 400px;
     width:50%;
     position: relative;
-    border-radius: 5px;;
+    border-radius: 5px;
+}
+.proj3{
+    background-image: url("images/project3.webp");
+    background-size: cover;
 }
 
 .proj2, .proj4{
@@ -499,7 +503,7 @@ body{
     top:50%;
     transform: translateY(-50%);
     left:90%;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 .slider-left{
@@ -510,7 +514,7 @@ body{
     top:50%;
     transform: translateY(-50%);
     right:90%;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 .slider-line-big{
@@ -570,19 +574,33 @@ body{
 .proj1-link {
     display: flex;
     justify-content: space-between;
+    width: 50%;
 }
 
 .proj1-flex-description {
     display: flex;
     flex-direction: column;
     position: absolute;
-    color: red;
+    color: var(--secondary);
     width:50%;
     height: 100%;
     left: 40%;
     /* justify-content: space-evenly; */
     top:10%;
     gap: 20%;
+}
+
+.proj3-link a img {
+    height: 40px;
+    width: 40px;
+}
+.proj2-link a img {
+    height: 40px;
+    width: 40px;
+}
+.proj1-link a img {
+    height: 40px;
+    width: 40px;
 }
 
 
@@ -600,13 +618,21 @@ body{
 .proj2-link {
     display: flex;
     justify-content: space-between;
+    width: 50%;
+}
+.stack > img {
+    height:50px;
+    width: 50px;
+}
+.stack{
+    color: var(--secondary);
 }
 
 .proj2-flex-description {
     display: flex;
     flex-direction: column;
     position: absolute;
-    color: red;
+    color: var(--secondary);
     width:50%;
     height: 100%;
     left: 10%;
@@ -626,20 +652,28 @@ body{
 }
 .proj3-link {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between ;
+    width: 50%;
 }
 
 .proj3-flex-description {
     display: flex;
     flex-direction: column;
     position: absolute;
-    color: red;
+    color: var(--secondary);
     width:50%;
     height: 100%;
     left: 40%;
-    /* justify-content: space-evenly; */
     top:10%;
     gap: 20%;
+}
+
+
+.proj1-flex-description h3, .proj2-flex-description h3, .proj3-flex-description h3 {
+    color: var(--primary);
+}
+.proj-name-text{
+    color: var(--secondary);
 }
 
 /***************************************/
@@ -778,6 +812,9 @@ body{
     .link-flex a {
         left:0;
     }
+        .project p{
+        font-size: 13px;
+    }
 }
 @media (max-width: 1140px){
     .box2 img {
@@ -814,6 +851,9 @@ body{
     .body-wrapper-wrapper{
         height: 3600px
     }
+    .proj1, .proj2,.proj3, .proj4{
+       width: 70%; 
+    }
 
 
 }
@@ -822,6 +862,7 @@ body{
     .wrapper{
         display:none;
     }
+
 }
 @media (max-width: 872px) {
     .box3 p{
@@ -847,6 +888,9 @@ body{
 @media (max-width: 765px) {
     .contact-link a {
         width: 145px;
+    }
+        .proj1, .proj2,.proj3, .proj4{
+       width: 90%; 
     }
 }
 @media (max-width: 634px){
@@ -887,6 +931,10 @@ body{
     .contact-wrapper{
         width:80%;
     }
+        .proj1-link a img,.proj2-link a img, .proj3-link a img, .proj4-link a img{
+       width: 25px;
+       height: 25px; 
+    }
 }
 
 @media(max-width:460px){
@@ -906,6 +954,9 @@ body{
     }
     .contact-wrapper{
         width:90%;
+    }
+        .proj1, .proj2,.proj3, .proj4{
+       width: 100%; 
     }
 
 
